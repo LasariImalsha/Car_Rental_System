@@ -1,0 +1,132 @@
+.divIcon{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 1px solid black;
+    top:3px
+}
+.serviceTittle{
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    top: 10%;
+    color: white;
+}
+#serviceInfoDiv{
+    position: absolute;
+    top: 365%;
+    background: black;
+    opacity: 80%;
+    color: white;
+}
+.descrip{
+    font-weight: lighter;
+}
+.driverNeedDiv{
+    position: absolute;
+    width: 100% ;
+    height: 60%;
+    background: #fe4101;
+    top: 442.6%;
+    right: 1px;
+}
+.driverNeedDiv1{
+    content: "";
+    position: absolute;
+    border-top: 381px solid #006c6c;
+    border-left: 0 solid transparent;
+    border-right: 94px solid transparent;
+    height: 0;
+    width: 50%;
+    z-index: 10000000000;
+}
+.driverNeedDivImg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* border-bottom: 381px solid black;
+     border-left: 175px solid transparent;
+     border-right: 0 solid transparent;*/
+    height: 100%;
+    width: 73%;
+}
+.driverNeedBtn{
+    position: absolute;
+    right: 22%;
+    top: 74%;
+    width: 17%;
+    background: #1089ff !important;
+    border: 1px solid #1089ff !important;
+    color: #fff !important;
+}
+.driverIcon{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: lightblue;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+#driverInfoDiv{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    z-index: 20000000000;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}#driverInfoDiv2{
+     position: absolute;
+     left: 0;
+     top: 77%;
+     z-index: 20000000000;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+ }#driverInfoText{
+      position: absolute;
+      width: 26%;
+      height: 0;
+      left: 0;
+      top: -60%;
+      z-index: 20000000000;
+      right: 29%;
+      bottom: 0;
+      margin: auto;
+  }#driverInfoText2{
+       position: absolute;
+       width: 26%;
+       height: 0;
+       left: 0;
+       top: 26%;
+       z-index: 20000000000;
+       right: 29%;
+       bottom: 0;
+       margin: auto;
+   }
+#driverName{
+    content: "Pathum";
+}
+#serviceInfoTitle{
+    position: absolute;
+    left: 35%;
+    right: 0;
+    top: 350%;
+    margin: auto;
+    z-index: 2500000000000000000000;
+}
+#services2{
+    position: absolute;
+    left: 19%;
+    right: 0;
+    top: -45%;
+    bottom: 0;
+    margin: auto;
+    font-size: 18px;
+}
+#services3{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
