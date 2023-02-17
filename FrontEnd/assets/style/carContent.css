@@ -1,0 +1,48 @@
+/**
+    * @author _ Pathum_Kaleesha
+    * @since - v0.1.0
+**/
+
+#carContent{
+
+}
+.rentCarBtn{
+    position: absolute;
+    background: transparent;
+    animation-name: rentNow;
+    /*animation-duration: 10s;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: alternate;*/
+}
+.carImg{
+    width: 18rem;
+    height: 200px;
+}
+#carTittle{
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    top: 8px;
+    color: black;
+}
+
+#carTable{
+    position: relative;
+    margin-top: 47%;
+    bottom:270px;
+}
+
+.btnBD{
+    width: 100%;
+    border: 1px solid black;
+}
+/*#offcanvasWithBothOptions{*/
+/*    background: cadetblue !important;*/
+/*    min-width: 100px;*/
+/*    width: 25vw;*/
+/*    height: 100vh;*/
+/*    position: fixed;*/
+/*    left: 0;*/
+/*    top:11%;*/
+/*    transition: all 0.4s;*/
+/*}*/
