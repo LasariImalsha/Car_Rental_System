@@ -1,0 +1,33 @@
+#signUp{
+    position: relative;
+    width: 90vw;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 250px;
+    background: linear-gradient(45deg, black, transparent);
+    z-index: 2000000000;
+}
+.form-label{
+    color: white;
+}
+#sec1{
+    position: absolute;
+    left: 8%;
+}
+#sec2{
+    position: absolute;
+    left: 37%;
+}
+#sec3{
+    position: absolute;
+    left: 69%;
+}
+#signCloseBtn:hover{
+    background: red;
+}
+#signCloseBtn{
+    position: absolute;
+    right: 0;
+    z-index: 1000000000;
+}
