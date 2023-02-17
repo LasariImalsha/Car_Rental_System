@@ -1,0 +1,88 @@
+#dashBoardContent {
+    width: 100vw;
+    height: 100vh;
+    background: 100%;
+}
+
+#descriptionDiv {
+    position: absolute;
+    left: 0;
+    right: 800px;
+    top: 0;
+    bottom: 75%;
+    margin: auto;
+    width: 41vw;
+    height: 7vh;
+    z-index: 10000;
+
+}
+
+#descriptionDashBoardH1 {
+    font-style: oblique;
+    font-variant-caps: small-caps;
+    color: white;
+    text-shadow: 2px 2px black;
+    right: 150px;
+
+}
+
+#description2 {
+    font-style: oblique;
+    font-variant-caps: small-caps;
+    color: white;
+    text-shadow: 2px 2px black;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+
+#contactInfo {
+    width: 288px;
+    height: 24px;
+    background: transparent;
+    position: absolute;
+    right:-15px;
+    bottom: 85px;
+
+}
+
+#cInfo {
+    color: white;
+    font-size: 20px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#dashRentCarBtnDiv {
+    position: absolute;
+    left: 555px;
+    top: 200px;
+    width: 133px;
+    background: transparent;
+    animation-name: rentNow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rentNow {
+    0% {
+        transform: rotate(20deg);
+    }
+    25% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+
+#rentCarBtnDashBoard {
+    background: transparent;
+}
