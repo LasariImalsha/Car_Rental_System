@@ -8,5 +8,152 @@
     <link href="assets/boostrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<!------------------------------DashBoard Content---------------------------------->
+<section class="container-fluid" id="adminDash">
+    <div id="adminImage">
+        <nav id="sidebar">
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-black-50" href="#" id="linkAdminDashBoard"><i
+                            class="fas fa-solid fa-home"></i> Home </a>
+                </li>
+                <li class="nav-item nav-itemMg" >
+                    <a class="nav-link text-black-50" href="#" id="linkCarManage"><i
+                            class="fas fa-solid fa-car-side"></i> Manage Car</a>
+                </li>
+                <li class="nav-item nav-itemMg">
+                    <a class="nav-link text-black-50" href="#" id="linkDriver"><i class="fas fa-solid fa-users"></i>
+                        Manage Driver</a>
+                </li>
+                <li class="nav-item nav-itemMg">
+                    <a class="nav-link text-black-50" href="#" id="linkCustomer"><i class="fas fa-user-cog"></i> Manage
+                        Customer</a>
+                </li>
+                <li class="nav-item nav-itemMg">
+                    <a class="nav-link text-black-50" href="#" id="linkPayment"><i
+                            class="fas fa-solid fa-credit-card"></i> Manage Payment</a>
+                </li>
+                <li class="nav-item nav-itemMg">
+                    <a class="nav-link text-black-50 " href="#" id="linkMaintenance"><i
+                            class="fas fa-solid fa-screwdriver"></i> Manage Maintenance</a>
+                </li><li class="nav-item nav-itemMg">
+                <a class="nav-link text-black-50 " href="#" id="linkRequest"><i
+                        class="fas fa-solid fa-screwdriver"></i> Rental Requests</a>
+            </li><li class="nav-item nav-itemMg">
+                <a class="nav-link text-black-50 " href="#" id="linkRentalReturn"><i
+                        class="fas fa-solid fa-screwdriver"></i> Rental Returns</a>
+            </li><li class="nav-item nav-itemMg">
+                <a class="nav-link text-black-50 " href="#" id="linkIncomeReport">
+                    <i
+                            class="fas fa-solid fa-money-check-alt"></i> Income Reports</a>
+            </li>
+            </ul>
+        </nav>
+        <section id="dashside">
+            <div id="dashboard-pg">
+                <div class="dashboard">
+                    <!--  <div class="d-flex align-items-center">
+                          <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                          <h2 class="fs-2 m-0">DASHBOARD</h2>
+                      </div>-->
+                    <div class="full-space container-fluid px-4">
+                        <div class="details-space row g-3 my-2">
+                            <div class="col-md-4">
+                                <div class="adh p-3 bg-white d-flex justify-content-around align-items-center details-box">
+                                    <div>
+                                        <h3 class="fs-2 text-center">00</h3>
+                                        <p class="fs-5">Pending Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="adh p-3 bg-white d-flex justify-content-around align-items-center details-box">
+                                    <div>
+                                        <h3 class="fs-2 text-center">00</h3>
+                                        <p class="fs-5">Requested Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="adh p-3 bg-white d-flex justify-content-around align-items-center details-box">
+                                    <div>
+                                        <h3 class="fs-2 text-center">00</h3>
+                                        <p class="fs-5">Daily Rent</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="full-space container-fluid px-4">
+                            <div class="details-space row g-3 my-2">
+                                <div class="col-md-4">
+                                    <div class="adh p-3 bg-white d-flex justify-content-around align-items-center details-box">
+                                        <div>
+                                            <h3 class="fs-2 text-center">00</h3>
+                                            <p class="fs-5">Available Cars</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="adh p-3 bg-white d-flex justify-content-around align-items-center details-box">
+                                        <div>
+                                            <h3 class="fs-2 text-center">00</h3>
+                                            <p class="fs-5">Rent Cars</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="adh p-3 bg-white d-flex justify-content-around align-items-center details-box">
+                                        <div>
+                                            <h3 class="fs-2 text-center">00</h3>
+                                            <p class="fs-5">Available Drivers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <h2 class="text-center">Daily Rent Car Details</h2>
+                    <br>
+                    <div class="col">
+                        <table class="table table-bordered table-hover">
+                            <thead class="bg-warning text-black">
+                            <tr>
+                                <th>Rent ID</th>
+                                <th>Date</th>
+                                <th>Release Date</th>
+                                <th>Return Date</th>
+                                <th>Customer ID</th>
+                                <th>Car Reg.No</th>
+                                <th>Driving Lic.No</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            <tbody id="tblDailyRentDetailsJson">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</section>
 </body>
 </html>
