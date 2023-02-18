@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -13,6 +14,7 @@ import javax.persistence.Entity;
 @ToString
 @Entity
 public class Admin {
+    @Id
     private String adminId;
     private String name;
     private String address;
