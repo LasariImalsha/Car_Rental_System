@@ -9,15 +9,15 @@
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
-/*#welcomeImgDiv{*/
-/*     position: absolute;*/
-/*     width: 42vw;*/
-/*     height: 75vh;*/
-/*     left: 10%;*/
-/*     border-radius: 1rem;*/
-/*     top: 118%;*/
-/*     background: green;*/
-/* }*/
+#welcomeImgDiv{
+     position: absolute;
+     width: 42vw;
+     height: 75vh;
+     left: 7%;
+     border-radius: 1rem;
+     top: 125%;
+     background: #474E68;
+ }
 #subTitleAbout{
     position: absolute;
     width: 150px;
