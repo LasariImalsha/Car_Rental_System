@@ -115,7 +115,7 @@
             width: 100vw;
             height: 90vh;
             background: green;
-            background: url("assets/images/home/dashDark.jpg");
+            background: url("assets/images/carDetails/dashDark.jpg");
             background-size: 100% 100%;
             position: relative;
             right: 15px;
@@ -127,7 +127,7 @@
 <body>
 
 <!-------------------------------Header---------------------------->
-<section>
+<section id="navbar">
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="#" >
@@ -140,22 +140,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active navigation text-white" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active navigation text-white" aria-current="page" href="#" id="linkHome">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navigation text-white" href="#">About Us</a>
+                        <a class="nav-link navigation text-white" href="#" id="linkAbout">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navigation text-white" href="#">Services</a>
+                        <a class="nav-link navigation text-white" href="#" id="linkServices">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navigation text-white" href="#">Car Details</a>
+                        <a class="nav-link navigation text-white" href="#" id="linkCarDetails">Car Details</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navigation text-white" href="#">Sign Up</a>
+                        <a class="nav-link navigation text-white" href="#" id="linkSignUp">Sign Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navigation text-white" href="#">Log In</a>
+                        <a class="nav-link navigation text-white" href="#" id="linkLogin">Log In</a>
                     </li>
                 </ul>
             </div>
@@ -825,5 +825,87 @@
         </div>
     </div>
 </section>
+
+
+<script src="assets/boostrap/js/bootstrap.bundle.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+
+<script>
+
+    $("#navbar").css("display","block");
+    $("#dashBoardContent").css("display","block");
+    $("#aboutContent").css("display","none");
+    $("#serviceContent").css("display","none");
+    $("#carContent").css("display","none");
+    $("#signUp").css("display","none");
+    $("#loginForm").css("display","none");
+
+    var uEmail = $("#typeEmailX").val();
+    var passWord = $("#typePasswordX").val();
+
+    $("#linkHome").click(function () {
+        $("#navbar").css("display","block");
+        $("#dashBoardContent").css("display","block");
+        $("#aboutContent").css("display","none");
+        $("#serviceContent").css("display","none");
+        $("#carContent").css("display","none");
+        $("#signUp").css("display","none");
+        $("#loginForm").css("display","none");
+    });
+
+    $("#linkAbout").click(function () {
+        $("#navbar").css("display","block");
+        $("#dashBoardContent").css("display","none");
+        $("#aboutContent").css("display","block");
+        $("#bgImageDashBoardDiv").css("display","block");
+        $("#serviceContent").css("display","none");
+        $("#carContent").css("display","none");
+        $("#signUp").css("display","none");
+        $("#loginForm").css("display","none");
+    });
+
+    $("#linkServices").click(function () {
+        $("#navbar").css("display","block");
+        $("#dashBoardContent").css("display","none");
+        $("#aboutContent").css("display","none");
+        $("#serviceContent").css("display","block");
+        $("#carContent").css("display","none");
+        $("#signUp").css("display","none");
+        $("#loginForm").css("display","none");
+    });
+
+    $("#linkCarDetails").click(function () {
+        $("#navbar").css("display","block");
+        $("#dashBoardContent").css("display","none");
+        $("#aboutContent").css("display","none");
+        $("#serviceContent").css("display","none");
+        $("#carContent").css("display","block");
+        $("#signUp").css("display","none");
+        $("#loginForm").css("display","none");
+    });
+
+    $("#linkSignUp").click(function () {
+        $("#navbar").css("display","block");
+        $("#dashBoardContent").css("display","block");
+        $("#aboutContent").css("display","none");
+        $("#serviceContent").css("display","none");
+        $("#carContent").css("display","none");
+        $("#signUp").css("display","block");
+        $("#loginForm").css("display","none");
+    });
+
+    $("#linkLogin").click(function () {
+        $("#navbar").css("display","block");
+        $("#dashBoardContent").css("display","block");
+        $("#aboutContent").css("display","none");
+        $("#serviceContent").css("display","none");
+        $("#carContent").css("display","none");
+        $("#signUp").css("display","none");
+        $("#loginForm").css("display","block");
+    });
+
+
+
+</script>
 </body>
 </html>
