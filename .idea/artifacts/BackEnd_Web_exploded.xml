@@ -1,7 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="backend">
-    <output-path>$PROJECT_DIR$/out/artifacts/backend</output-path>
-    <root id="archive" name="backend.war">
+  <artifact type="exploded-war" name="BackEnd:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/BackEnd_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="BackEnd/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="BackEnd" />
@@ -10,7 +11,6 @@
           <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.24" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="BackEnd/web/Web" />
     </root>
   </artifact>
 </component>
