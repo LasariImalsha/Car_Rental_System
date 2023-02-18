@@ -14,7 +14,7 @@
 }
 #serviceInfoDiv{
     position: absolute;
-    top: 365%;
+    top: 125%;
     background: black;
     opacity: 80%;
     color: white;
@@ -27,7 +27,7 @@
     width: 100% ;
     height: 60%;
     background: #fe4101;
-    top: 442.6%;
+    top: 196.1%;
     right: 1px;
 }
 .driverNeedDiv1{
@@ -75,7 +75,8 @@
     right: 0;
     bottom: 0;
     margin: auto;
-}#driverInfoDiv2{
+}
+#driverInfoDiv2{
      position: absolute;
      left: 0;
      top: 77%;
@@ -83,7 +84,8 @@
      right: 0;
      bottom: 0;
      margin: auto;
- }#driverInfoText{
+ }
+#driverInfoText{
       position: absolute;
       width: 26%;
       height: 0;
@@ -93,7 +95,8 @@
       right: 29%;
       bottom: 0;
       margin: auto;
-  }#driverInfoText2{
+}
+#driverInfoText2{
        position: absolute;
        width: 26%;
        height: 0;
@@ -109,9 +112,9 @@
 }
 #serviceInfoTitle{
     position: absolute;
-    left: 35%;
+    left: 40%;
     right: 0;
-    top: 350%;
+    top: 118%;
     margin: auto;
     z-index: 2500000000000000000000;
 }

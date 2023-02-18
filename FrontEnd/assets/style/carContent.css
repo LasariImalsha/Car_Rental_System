@@ -1,8 +1,3 @@
-/**
-    * @author _ Pathum_Kaleesha
-    * @since - v0.1.0
-**/
-
 #carContent{
 
 }
@@ -22,27 +17,29 @@
     position: absolute;
     left: 1%;
     right: 1%;
-    top: 8px;
-    color: black;
+    bottom: 10%;
+    color: white;
 }
 
 #carTable{
-    position: relative;
+    position: absolute;
     margin-top: 47%;
-    bottom:270px;
+    right: 1%;
+    left: 1%;
+    top:20px;
 }
 
 .btnBD{
     width: 100%;
     border: 1px solid black;
 }
-/*#offcanvasWithBothOptions{*/
-/*    background: cadetblue !important;*/
-/*    min-width: 100px;*/
-/*    width: 25vw;*/
-/*    height: 100vh;*/
-/*    position: fixed;*/
-/*    left: 0;*/
-/*    top:11%;*/
-/*    transition: all 0.4s;*/
-/*}*/
+#offcanvasWithBothOptions{
+    background: cadetblue !important;
+    min-width: 100px;
+    width: 25vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top:11%;
+    transition: all 0.4s;
+}
