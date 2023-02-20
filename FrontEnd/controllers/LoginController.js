@@ -1,3 +1,7 @@
+var baseUrl1 = "";
+var baseUrl2 = "";
+var baseUrl3 = "";
+
 function loginUser() {
     var username = $('#userEmail').val();
     var password = $('#userPassword').val();
