@@ -1,0 +1,185 @@
+#sidebar{
+    background: #423F3E !important;
+    min-width: 100px;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top:0;
+    transition: all 0.4s;
+}
+.nav{
+    font-family: "Corbel";
+    /*font-weight: bold;*/
+}
+
+#dashside{
+    position: absolute;
+    left: 20%;
+    width: 80vw;
+    height: 100vh;
+
+    background: #8B7E74 !important;
+}
+.adh{
+    border: solid #F2D388 2px;
+    border-radius:  1rem;
+    background: #423F3E;
+    color: white;
+}
+
+.topic{
+    color: black;
+    text-shadow: 1px 1px 2px #000000;
+}
+.nav-item:hover {
+    background: #20262E;
+}.nav-itemMg{
+     margin-top: 5%;
+ }
+/*---------------------------------------*/
+/*manage car*/
+#manageCarContent{
+    position: absolute;
+    width: 83vw;
+    height: 100vh;
+    right: 0;
+    top: 0px;
+    left: 18vw;
+    background: #8B7E74 !important;
+}
+.set{
+    width: 100px;
+    border-radius: 5px;
+    position: relative;
+    top:5px;
+}
+#sec1Car{
+    position: absolute;
+    left: 4%;
+}
+#sec2Car{
+    position: absolute;
+    left: 35%;
+}
+#sec3Car{
+    position: absolute;
+    left: 66%;
+}
+
+.btn1{
+    position: relative;
+    top: 5px;
+    border-radius: 5px;
+}
+
+/*mange table car*/
+#manageCarTableContent{
+    position: absolute;
+    width: 80vw;
+    height: 88vh;
+    right: 0;
+    top: 15px;
+    left: 20vw;
+    background: #8B7E74 !important;
+}
+#manageCarDetails{
+    position: absolute;
+    right: 2vw;
+    bottom: 5vh;
+    width: 20%;
+}
+/*mange Customer*/
+#manageUserTable{
+    position: absolute;
+    width: 80vw;
+    height: 88vh;
+    right: 0;
+    top: 15px;
+    left: 20vw;
+    background: #8B7E74 !important;
+}
+#customerTable{
+    position: absolute;
+    width: 80vw;
+}
+/*manage driver*/
+#manageDriverContent{
+    position: absolute;
+    width: 83vw;
+    height: 100vh;
+    right: 0;
+    top: 0px;
+    left: 19.8vw;
+    background: #8B7E74 !important;
+}
+
+#sec1Driver{
+    position: absolute;
+    left: 8%;
+}
+#sec2Driver{
+    position: absolute;
+    left: 37%;
+}
+#sec3Driver{
+    position: absolute;
+    left: 69%;
+}
+#manageDriverTable{
+    position: absolute;
+    top: 52%;
+
+
+}
+/*payment details*/
+#paymentDetailsContent{
+    position: absolute;
+    width: 80vw;
+    height: 89vh;
+    right: 0;
+    top: 15px;
+    left: 20vw;
+    background: #8B7E74 !important;
+}
+/*maintenence*/
+#mainteneceContent{
+    position: absolute;
+    width: 80vw;
+    height: 89vh;
+    right: 0;
+    top: 20px;
+    left: 20vw;
+    background:#8B7E74 !important;
+}
+/*request*/
+#reqContent {
+    position: absolute;
+    width: 80vw;
+    height: 89vh;
+    right: 0;
+    top: 20px;
+    left: 20vw;
+    background: #8B7E74 !important;
+}
+
+/*responses*/
+#responsesContent {
+    position: absolute;
+    width: 80vw;
+    height: 100vh;
+    right: 0;
+    top: 20px;
+    left: 19vw;
+    background: #8B7E74 !important;
+}
+/*income Report*/
+#incomeReportContent{
+    position: absolute;
+    width: 80vw;
+    height: 89vh;
+    right: 0;
+    top: 20px;
+    left: 19.7vw;
+    background: #8B7E74 !important;
+}
