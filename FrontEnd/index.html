@@ -850,6 +850,16 @@
         $("#loginForm").css("display","none");
     });
 
+    $("#rentCarBtnDashBoard").click(function () {
+        $("#navbar").css("display","block");
+        $("#dashBoardContent").css("display","block");
+        $("#aboutContent").css("display","none");
+        $("#serviceContent").css("display","none");
+        $("#carContent").css("display","none");
+        $("#signUp").css("display","none");
+        $("#loginForm").css("display","block");
+    });
+
     $("#linkSignUp").click(function () {
         $("#navbar").css("display","block");
         $("#dashBoardContent").css("display","block");
@@ -885,26 +895,38 @@
     });
 
     $("#loginCheckBtn").click(function () {
-        // /*  if ($("#typeEmailX").val()==="user@gmail.com" && $("#typePasswordX").val()==="user123") {
+        //  if ($("#typeEmailX").val()==="user@gmail.com" && $("#typePasswordX").val()==="user123") {
         //       $("#dashBoardContent").css("display", "none");
         //       $("#carContent").css("display", "block");
         //       $("#loginForm").css("display", "none");
-        //   }*/
-        // /* if ($("#typeEmailX").val() === "admin@gmail.com" && $("#typePasswordX").val() === "admin123") {
-        //      $("#dashBoardContent").css("display", "none");
-        //      $("#carContent").css("display", "none");
-        //      $("#loginForm").css("display", "none");
-        //      $("#aboutContent").css("display", "none");
-        //      $("#serviceContent").css("display", "none");
-        //      $("#adminDash").css("display", "block");
-        //      $("#ManageTableCar").css("display", "block");
-
+        //   }
+        // if ($("#typeEmailX").val() === "admin@gmail.com" && $("#typePasswordX").val() === "admin123") {
+        //     $("#dashBoardContent").css("display", "none");
+        //     $("#carContent").css("display", "none");
+        //     $("#loginForm").css("display", "none");
+        //     $("#aboutContent").css("display", "none");
+        //     $("#serviceContent").css("display", "none");
+        //     $("#adminDash").css("display", "block");
+        //     $("#ManageTableCar").css("display", "block");
+        //
+        // }
         loginUser();
     });
 
-    $("#changeUserType").click(function (){
-        console.log("Val"+$("#changeUserType").val()) ;
-        console.log("Text"+$("#changeUserType").text()) ;
+    $("#newUser").click(function () {
+        $("#navbar").css("display","block");
+        $("#dashBoardContent").css("display","block");
+        $("#aboutContent").css("display","none");
+        $("#serviceContent").css("display","none");
+        $("#carContent").css("display","none");
+        $("#signUp").css("display","block");
+        $("#loginForm").css("display","none");
+    });
+
+
+    $("#changeUserType").click(function () {
+        console.log("Val" + $("#changeUserType").val());
+        console.log("Text" + $("#changeUserType").text());
     });
 </script>
 </body>
