@@ -7,7 +7,7 @@ public interface LoginService {
 
     String generateLoginId();
 
-    String generateLastLoginId();
-
     LoginDTO searchLogin(String loginId);
+
+    String getLastLoginId();
 }

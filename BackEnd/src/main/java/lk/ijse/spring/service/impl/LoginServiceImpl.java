@@ -53,7 +53,7 @@ public class LoginServiceImpl implements LoginService {
     }
 
     @Override
-    public String generateLastLoginId() {
+    public String getLastLoginId() {
         return repo.getLastLoginId();
     }
 
