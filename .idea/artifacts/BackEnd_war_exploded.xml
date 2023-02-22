@@ -26,6 +26,12 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.14.1" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.14.1" />
           <element id="library" level="project" name="Maven: javax.persistence:javax.persistence-api:2.2" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:2.7.7" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:2.7.7" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-orm:5.3.25" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.3.25" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.25" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.32" />
         </element>
       </element>
       <element id="directory" name="META-INF">
