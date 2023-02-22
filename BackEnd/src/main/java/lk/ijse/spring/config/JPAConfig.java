@@ -27,9 +27,6 @@ public class JPAConfig {
     @Autowired
     private Environment env;
 
-    public JPAConfig(Environment env) {
-        this.env = env;
-    }
 
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource ds, JpaVendorAdapter va){
@@ -59,7 +56,7 @@ public class JPAConfig {
         adapter.setShowSql(true);
         return adapter;
     }
-
+//now ok. basics tika balaganna aith.
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory emf){
         return new JpaTransactionManager(emf);
