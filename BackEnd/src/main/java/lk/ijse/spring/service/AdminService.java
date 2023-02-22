@@ -4,7 +4,7 @@ import lk.ijse.spring.dto.AdminDTO;
 
 import java.util.List;
 
-public interface AdminServices {
+public interface AdminService {
     void saveAdmin(AdminDTO dto);
 
     void updateAdmin(AdminDTO dto);
