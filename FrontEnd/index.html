@@ -476,7 +476,7 @@
                         </ul>
                     </td>
                     <td class="col-1">
-                        <button class="rentCarBtn" type="button">Rent Car</button>
+                        <a href="pages/Customer.html" target="_blank" ><img src="assets/images/carDetails/Rent.png" alt="rent" width="50px" height="50px"></a>
                     </td>
                 </tr>
                 <tr>
@@ -530,7 +530,7 @@
                         </ul>
                     </td>
                     <td class="col-1">
-                        <button class="rentCarBtn" type="button">Rent Car</button>
+                        <a href="pages/Customer.html" target="_blank" ><img src="assets/images/carDetails/Rent.png" alt="rent" width="50px" height="50px"></a>
                     </td>
                 </tr>
                 <tr>
@@ -584,7 +584,7 @@
                         </ul>
                     </td>
                     <td class="col-1">
-                        <button class="rentCarBtn" type="button">Rent Car</button>
+                        <a href="pages/Customer.html" target="_blank" ><img src="assets/images/carDetails/Rent.png" alt="rent" width="50px" height="50px"></a>
                     </td>
                 </tr>
                 <tr>
@@ -639,7 +639,7 @@
                         </ul>
                     </td>
                     <td>
-                        <button class="rentCarBtn" type="button">Rent Car</button>
+                        <a href="pages/Customer.html" target="_blank" ><img src="assets/images/carDetails/Rent.png" alt="rent" width="50px" height="50px"></a>
                     </td>
                 </tr>
                 </tbody>
@@ -922,10 +922,22 @@
         $("#loginForm").css("display","none");
     });
 
+    $("#lookCarBtn").click(function () {
+        $("#navbar").css("display","block");
+        $("#dashBoardContent").css("display","block");
+        $("#aboutContent").css("display","none");
+        $("#serviceContent").css("display","none");
+        $("#carContent").css("display","none");
+        $("#signUp").css("display","none");
+        $("#loginForm").css("display","block");
+    });
+
     $("#changeUserType").click(function () {
         console.log("Val" + $("#changeUserType").val());
         console.log("Text" + $("#changeUserType").text());
     });
+
+
 </script>
 </body>
 </html>

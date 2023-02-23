@@ -1,14 +1,6 @@
 #carContent{
 
 }
-.rentCarBtn{
-    position: absolute;
-    background: transparent;
-    animation-name: rentNow;
-    /*animation-duration: 10s;*/
-    /*animation-iteration-count: infinite;*/
-    /*animation-direction: alternate;*/
-}
 .carImg{
     width: 18rem;
     height: 200px;
