@@ -12,7 +12,6 @@
     <link href="assets/style/carContent.css" rel="stylesheet">
     <link href="assets/style/signUpForm.css" rel="stylesheet">
     <link href="assets/style/logInForm.css" rel="stylesheet">
-    <link href="pages/Admin.html">
     <style>
         /*body::-webkit-scrollbar {*/
         /*    display: none;*/
@@ -895,21 +894,21 @@
     });
 
     $("#loginCheckBtn").click(function () {
-         if ($("#typeEmailX").val()==="user@gmail.com" && $("#typePasswordX").val()==="user123") {
-              $("#dashBoardContent").css("display", "none");
-              $("#carContent").css("display", "block");
-              $("#loginForm").css("display", "none");
-          }
-        if ($("#typeEmailX").val() === "admin@gmail.com" && $("#typePasswordX").val() === "admin123") {
-            $("#dashBoardContent").css("display", "none");
-            $("#carContent").css("display", "none");
-            $("#loginForm").css("display", "none");
-            $("#aboutContent").css("display", "none");
-            $("#serviceContent").css("display", "none");
-            $("#adminDash").css("display", "block");
-            $("#ManageTableCar").css("display", "block");
-
-        }
+        //  if ($("#typeEmailX").val()==="user@gmail.com" && $("#typePasswordX").val()==="user123") {
+        //       $("#dashBoardContent").css("display", "none");
+        //       $("#carContent").css("display", "block");
+        //       $("#loginForm").css("display", "none");
+        //   }
+        // if ($("#typeEmailX").val() === "admin@gmail.com" && $("#typePasswordX").val() === "admin123") {
+        //     $("#dashBoardContent").css("display", "none");
+        //     $("#carContent").css("display", "none");
+        //     $("#loginForm").css("display", "none");
+        //     $("#aboutContent").css("display", "none");
+        //     $("#serviceContent").css("display", "none");
+        //     $("#adminDash").css("display", "block");
+        //     $("#ManageTableCar").css("display", "block");
+        //
+        // }
         loginUser();
     });
 

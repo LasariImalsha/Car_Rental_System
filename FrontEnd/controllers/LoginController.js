@@ -1,4 +1,4 @@
-var baseUrl1 = "";
+var baseUrl1 = "http://localhost:8080/app/admin";
 var baseUrl2 = "";
 var baseUrl3 = "";
 
