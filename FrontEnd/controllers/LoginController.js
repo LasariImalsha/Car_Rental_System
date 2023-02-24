@@ -1,6 +1,6 @@
 var baseUrl1 = "http://localhost:8080/app/admin";
-var baseUrl2 = "http://localhost:8080/app/customer";
-var baseUrl3 = "";
+var baseUrl2 = "";
+var baseUrl3 = "http://localhost:8080/app/customer";
 
 function loginUser() {
     var username = $('#userEmail').val();
@@ -40,7 +40,7 @@ function searchAdmin(userType, username, password) {
 function searchDriver(userType, username, password) {
     if (userType === "Driver") {
         $.ajax({
-            url: baseUrl3 + "/" + username + "/" + password,
+            url: baseUrl2 + "/" + username + "/" + password,
             method: "GET",
             success: function (res) {
                 if (res.data === true) {
@@ -57,7 +57,7 @@ function searchDriver(userType, username, password) {
 function searchCustomer(userType, username, password) {
     if (userType === "Customer") {
         $.ajax({
-            url: baseUrl2 + "/" + username + "/" + password,
+            url: baseUrl3 + "/" + username + "/" + password,
             method: "GET",
             success: function (res) {
                 console.log(res.data);
