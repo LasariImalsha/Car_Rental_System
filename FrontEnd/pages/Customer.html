@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Customer Page</title>
+    <link href="../assets/images/Customer.png" rel="icon">
+    <link href="../assets/boostrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/style/adminContent.css" rel="stylesheet">
 </head>
 <body>
 <section class="container-fluid" id="CarBookingContent">
@@ -12,7 +16,7 @@
         </div>
         <input type="text" class="form-control" id="txtCustId" name="paymentAmount" style="visibility: hidden">
         <div class="row p-3">
-            <h3 class="h3  p-2 bg-primary text-black">Car and Driver Details</h3>
+            <h3 class="h3" style="background-color: #2B3467; color: white">Car and Driver Details</h3>
             <div class="col-2">
                 <label for="cmbType" class="form-label mb-0">Car Type</label>
                 <select class="form-select" aria-label="Default select example" id="cmbType"
@@ -131,7 +135,7 @@
         </div>
 
         <div class="row p-3">
-            <h3 class="h3  p-2 bg-primary text-black">Rental Details</h3>
+            <h3 class="h3  p-2" style="background-color: #2B3467; color: white">Rental Details</h3>
             <div class="col-2">
                 <div class="mb-3">
                     <label for="txtCarRentId" class="form-label mb-0">Rent ID</label>
@@ -194,7 +198,7 @@
             </div>
         </div>
         <div class="row ms-0 me-0">
-            <h3 class="h3  p-2 bg-primary text-black">Payment Details</h3>
+            <h3 class="h3  p-2 bg-success text-white">Payment Details</h3>
             <div class="col-3">
                 <div class="mb-3">
                     <label for="txtPaymentId" class="form-label mb-0">Payment ID</label>
@@ -220,7 +224,7 @@
     <section id="responseBookingContent">
         <div class="row text-center"><h1 class="h1 display-5">Booking Responses</h1></div>
         <table class="table table-hover table-bordered table-striped" id="bookingResponsesTbl">
-            <thead class="bg-primary" style="color: black">
+            <thead class="bg-success" style="color: white">
             <tr>
                 <th>Rent ID</th>
                 <th>Date</th>
@@ -278,7 +282,7 @@
         <div class="row m-3">
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                 <button type="button" class="btn  mt-3 " id="btnDeleteRental"><i class="fas fa-trash"></i> Delete Rental</button>
-                <button type="button" class="btn mt-3" id="btnClearRental" style="background-color: #8e9090; color: white">Clear</button>
+                <button type="button" class="btn mt-3" id="btnClearRental" style="background-color: #2B3467; color: white">Clear</button>
             </div>
         </div>
         <div class="row text-center"><h1 class="h1 display-5">Payment Details</h1></div>
@@ -299,7 +303,7 @@
         </div>
         <div class="bg-light" style="height: 65vh">
             <table class="table table-hover table-bordered table-striped" id="paymentsTbl1">
-                <thead style="background-color: blue; color: white">
+                <thead style="background-color: #2B3467; color: white">
                 <tr>
                     <th>Payment ID</th>
                     <th>Date</th>

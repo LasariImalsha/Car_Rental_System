@@ -1,4 +1,4 @@
-var baseUrl3 = "";
+var baseUrl3 = "http://localhost:8080/app/customer";
 
 let regName = /^[A-z .]{3,}$/;
 let regAddress = /^[A-z ,.0-9]{3,}$/;
