@@ -28,14 +28,7 @@ function searchAdmin(userType, username, password) {
             method: "GET",
             success: function (res) {
                 if (res.data === true) {
-                    $("#dashBoardContent").css("display", "none");
-                    $("#carContent").css("display", "none");
-                    $("#loginForm").css("display", "none");
-                    $("#aboutContent").css("display", "none");
-                    $("#serviceContent").css("display", "none");
-                    $("#adminDash").css("display", "block");
-                    $("#ManageTableCar").css("display", "none");
-
+                    location.replace("pages/Admin.html");
                 } else {
                     alert(res.message);
                 }
@@ -47,11 +40,11 @@ function searchAdmin(userType, username, password) {
 function searchDriver(userType, username, password) {
     if (userType === "Driver") {
         $.ajax({
-            url: baseUrl2 + "/" + username + "/" + password,
+            url: baseUrl3 + "/" + username + "/" + password,
             method: "GET",
             success: function (res) {
                 if (res.data === true) {
-                    location.replace("DriverPage.html");
+                    location.replace("pages/DriverPage.html");
                 } else {
 
                     alert(res.massage);
@@ -64,14 +57,14 @@ function searchDriver(userType, username, password) {
 function searchCustomer(userType, username, password) {
     if (userType === "Customer") {
         $.ajax({
-            url: baseUrl3 + "/" + username + "/" + password,
+            url: baseUrl2 + "/" + username + "/" + password,
             method: "GET",
             success: function (res) {
                 console.log(res.data);
                 console.log(res.username);
                 console.log(res.password);
                 if (res.data === true) {
-                    logincar();
+                    location.replace("pages/Customer.html");
                     setTimeout(getLastLoginUser,1500);
                     alert(res.message);
                 } else {
@@ -88,22 +81,4 @@ $('#loginCheckBtn').click(function () {
         loginUser();
     }
 });
-function logincar() {
-    $("#dashBoardContent").css("display", "none");
-    $("#loginForm").css("display", "none");
-    $("#carContent").css("display", "block");
-    $("#signUp").css("display", "none");
-    $("#serviceContent").css("display", "none");
-    $("#aboutContent").css("display", "none");
-    $("#adminDash").css("display", "none");
-    $("#ManageTableCar").css("display", "none");
-    $("#manageCar").css("display", "none");
-    $("#manageUser").css("display", "none");
-    $("#manageDriver").css("display", "none");
-    $("#paymentDetailsContent").css("display", "none");
-    $("#mainteneceContent").css("display", "none");
-    $("#reqContent").css("display", "none");
-    $("#responsesContent").css("display", "none");
-    $("#incomeReportContent").css("display", "none");
-    $("#CarBookingContent").css("display", "none");
-}
+
