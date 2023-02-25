@@ -91,16 +91,16 @@ public class CustomerController {
     @PutMapping(path = "/up/{id}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil uploadImagesAndPath(@RequestPart("nicf") MultipartFile nicf, @RequestPart("nicb") MultipartFile nicb, @RequestPart("licenceImg") MultipartFile licenceImg, @PathVariable String id) {
         try {
-            String projectPath = String.valueOf(new File("/intelliJ/Car_Rental_System/FrontEnd/saved_images"));
-            File uploadsDir = new File(projectPath + "/Customers");
+            String projectPath = String.valueOf(new File("D:/intelliJ/Car_Rental_System/FrontEnd/saved_images"));
+            File uploadsDir = new File(projectPath + "/customers");
             uploadsDir.mkdir();
             nicf.transferTo(new File(uploadsDir.getAbsolutePath() + "/" + nicf.getOriginalFilename()));
             nicb.transferTo(new File(uploadsDir.getAbsolutePath() + "/" + nicb.getOriginalFilename()));
             licenceImg.transferTo(new File(uploadsDir.getAbsolutePath() + "/" + licenceImg.getOriginalFilename()));
 
-            String nicfPath = projectPath + "/Customers/" + nicf.getOriginalFilename();
-            String nicbPath = projectPath + "/Customers/" + nicb.getOriginalFilename();
-            String licenceImgPath = projectPath + "/Customers/" + licenceImg.getOriginalFilename();
+            String nicfPath = projectPath + "/customers/" + nicf.getOriginalFilename();
+            String nicbPath = projectPath + "/customers/" + nicb.getOriginalFilename();
+            String licenceImgPath = projectPath + "/customers/" + licenceImg.getOriginalFilename();
 
             service.uploadCustomerImages(nicfPath, nicbPath, licenceImgPath, id);
 
