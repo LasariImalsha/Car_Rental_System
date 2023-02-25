@@ -28,7 +28,7 @@ function searchAdmin(userType, username, password) {
             method: "GET",
             success: function (res) {
                 if (res.data === true) {
-                    location.replace("pages/Admin.html");
+                    location.replace("../pages/Admin.html");
                 } else {
                     alert(res.message);
                 }
@@ -44,7 +44,7 @@ function searchDriver(userType, username, password) {
             method: "GET",
             success: function (res) {
                 if (res.data === true) {
-                    location.replace("pages/DriverPage.html");
+                    location.replace("../pages/DriverPage.html");
                 } else {
 
                     alert(res.massage);
@@ -64,7 +64,7 @@ function searchCustomer(userType, username, password) {
                 console.log(res.username);
                 console.log(res.password);
                 if (res.data === true) {
-                    location.replace("pages/Customer.html");
+                    location.replace("../pages/Customer.html");
                     setTimeout(getLastLoginUser,1500);
                     alert(res.message);
                 } else {
