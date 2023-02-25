@@ -1,4 +1,4 @@
-var baseUrl2 = "";
+var baseUrl2 = "http://localhost:8080/app/driver";
 
 driverLoadTable();
 function addDriver() {

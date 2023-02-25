@@ -1,5 +1,5 @@
 var baseUrl1 = "http://localhost:8080/app/admin";
-var baseUrl2 = "";
+var baseUrl2 = "http://localhost:8080/app/driver";
 var baseUrl3 = "http://localhost:8080/app/customer";
 
 function loginUser() {
