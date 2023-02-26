@@ -97,7 +97,7 @@ function generateRentId() {
 */
 
 ////////////////////////////////////////////
-let baseUrl = "";
+let baseUrl = "http://localhost:8080/app/";
 
 let regAmount = /^[0-9.]{1,}$/;
 let today = new Date().toISOString().slice(0, 10);
@@ -110,7 +110,7 @@ generatePaymentId();
 
 function getLastLoginUser() {
     $.ajax({
-        url: "",
+        url: "http://localhost:8080/app/login/getLastLogin",
         method: "GET",
         success: function (res) {
             let login = res.data;
@@ -121,7 +121,7 @@ function getLastLoginUser() {
 
 function getAllUserData(username, password) {
     $.ajax({
-        url: "" + username + "/" + password,
+        url: "http://localhost:8080/app/customer/set/" + username + "/" + password,
         method: "GET",
         success: function (res) {
             let customer = res.data;
@@ -137,7 +137,7 @@ $('#cmbType').change(function () {
     $('#cmbRegistrationNo').empty();
     $('#cmbRegistrationNo').append(new Option("-Select Registration No-", ""));
     $.ajax({
-        url: baseUrl + "" + type,
+        url: baseUrl + "car/getRegNo/" + type,
         method: "GET",
         success: function (res) {
             let i = 0;
@@ -153,7 +153,7 @@ $('#cmbType').change(function () {
 $('#cmbRegistrationNo').change(function () {
     let registrationNo = $('#cmbRegistrationNo').find('option:selected').text();
     $.ajax({
-        url: baseUrl + "" + registrationNo,
+        url: baseUrl + "car/" + registrationNo,
         method: "GET",
         success: function (res) {
             let car = res.data;
@@ -187,20 +187,20 @@ function setCarDataToBookingFields(car) {
 
     let frontViewPath = car.frontViewImg;
     console.log(frontViewPath);
-    let frontViewImg = frontViewPath.split("")[1];
+    let frontViewImg = frontViewPath.split("D:/intelliJ/Car_Rental_System/FrontEnd/saved_images/cars")[1];
     let FrontViewImgSrc = "Saved_Images/Cars" + frontViewImg;
 
     let backViewPath = car.backViewImg;
-    let backViewImg = backViewPath.split("")[1];
+    let backViewImg = backViewPath.split("D:/intelliJ/Car_Rental_System/FrontEnd/saved_images/cars")[1];
     let backViewImgSrc = "Saved_Images/Cars" + backViewImg;
     console.log(backViewImgSrc);
 
     let sideViewPath = car.sideViewImg;
-    let sideViewImg = sideViewPath.split("")[1];
+    let sideViewImg = sideViewPath.split("D:/intelliJ/Car_Rental_System/FrontEnd/saved_images/cars")[1];
     let sideViewImgSrc = "Saved_Images/Cars" + sideViewImg;
 
     let interiorViewPath = car.internalViewImg;
-    let interiorViewImg = interiorViewPath.split("")[1];
+    let interiorViewImg = interiorViewPath.split("D:/intelliJ/Car_Rental_System/FrontEnd/saved_images/cars")[1];
     let interiorViewImgSrc = "Saved_Images/Cars" + interiorViewImg;
 
     let fvImg = `<img src=${FrontViewImgSrc} alt="NIC Front" style="background-size: cover;width: 100%;height: 100%">`;
@@ -324,7 +324,7 @@ $('#sendRequest').click(function () {
 
 function searchCustomerById(customerId) {
     $.ajax({
-        url: baseUrl + "" + customerId,
+        url: baseUrl + "customer/" + customerId,
         method: "GET",
         success: function (res) {
             let customer = res.data;
@@ -337,7 +337,7 @@ function searchCustomerById(customerId) {
 function searchCarByRegNo(customer) {
     let registrationNo = $('#cmbRegistrationNo').find('option:selected').text();
     $.ajax({
-        url: baseUrl + "" + registrationNo,
+        url: baseUrl + "car/" + registrationNo,
         method: "GET",
         success: function (res) {
             let car = res.data;
@@ -354,7 +354,7 @@ function searchDriverByLicenceNo(customer, car) {
     }
     if (licenceNo != null) {
         $.ajax({
-            url: baseUrl + "" + licenceNo,
+            url: baseUrl + "driver/" + licenceNo,
             method: "GET",
             success: function (res) {
                 let driver = res.data;

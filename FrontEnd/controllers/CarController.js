@@ -1,4 +1,4 @@
-var baseUrl4 = "";
+var baseUrl4 = "http://localhost:8080/app/car";
 
 $("#addCar").click(function () {
     addCar();
@@ -100,19 +100,19 @@ function loadAllCarsTable() {
             for (let car of resp.data) {
                 let frontViewPath = car.frontViewImg;
                 let frontViewImg = frontViewPath.split("")[1];
-                let FrontViewImgSrc = "Saved_Images/Cars" + frontViewImg;
+                let FrontViewImgSrc = "saved_images/cars" + frontViewImg;
 
                 let sideViewPath = car.sideViewImg;
                 let sideViewImg = sideViewPath.split("")[1];
-                let sideViewImgSrc = "Saved_Images/Cars" + sideViewImg;
+                let sideViewImgSrc = "saved_images/cars" + sideViewImg;
 
                 let interiorViewPath = car.internalViewImg;
                 let interiorViewImg = interiorViewPath.split("")[1];
-                let interiorViewImgSrc = "Saved_Images/Cars" + interiorViewImg;
+                let interiorViewImgSrc = "saved_images/cars" + interiorViewImg;
 
                 let backViewPath = car.backViewImg;
                 let backViewImg = backViewPath.split("")[1];
-                let backViewImgSrc = "Saved_Images/Cars" + backViewImg;
+                let backViewImgSrc = "saved_images/cars" + backViewImg;
 
                 let row = `<tr> <td class="col-3">
                     <div class="carousel slide carousel-fade " data-bs-ride="carousel" id="carouselExampleFade">
